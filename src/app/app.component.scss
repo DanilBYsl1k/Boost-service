@@ -1,0 +1,30 @@
+.page{
+    background-image: url(../assets/image/background-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1 1 auto;
+
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    background-color: #0f0f0f6f;
+    top: 49px;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 4;
+}
+.active_page{
+    background-image: url(../assets/image/background.png);
+}
+.block-page{
+    max-height:100vh;
+    overflow: hidden;
+}

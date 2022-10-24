@@ -1,0 +1,37 @@
+<div class="pages_paragraph">
+    <section>
+        <div class="container">
+            <ul class="bread-crums">
+                <li class="home" routerLink="/">home</li>
+                <li>World of Warcraft </li>
+                <li *ngFor="let activeClass of activeClass">{{activeClass.params.paragraph}}</li>
+            </ul>
+            <app-catalog [number]="number" [popular]="popular"></app-catalog>
+        </div>
+    </section>
+    <!-- pagination -->
+    <section class="info_service">
+        <div class="container container_info-service">
+            <div class="info_service-title">
+                <img src="../../../../assets/image/CrownSimple.svg" alt=""><h2>WoW Shadowlands Boosting Service</h2>
+            </div>
+            <p>Leveling up in Shadowlands is very intense and exciting. Interesting quest lines, beautiful locations - it's all worth going through at least once.
+                Four dissimilar covenants, a dark and mysterious Maw - the developers have done a great job. </p>
+            <p>But passing locations a second or third time, they cause less and less interest. The game turns into a routine and does not cause the desire to play.
+            But there is a way out - <b>order a Shadowlands boost from us!</b></p>
+            <h3>We can offer several ways for leveling in Shadowkands:</h3>
+            <ul class="list-info">
+                <li>Mythic dungeons boost;</li>
+                <li>Gearing up your toon;</li>
+                <li>Raids, mounts, etc.</li>
+            </ul>
+            <h3>During shadowlands carry, we can offer a lot of services:</h3>
+            <ul class="list-info">
+                <li>Mythic dungeons boost;</li>
+                <li>Gearing up your toon;</li>
+                <li>Raids, mounts, etc.</li>
+            </ul>
+            <p>We provide Shadowlands carry only in <b>manual mode, without using bots, scripts or other prohibited software</b>. We consistently complete quests in each location, go to story dungeons. By purchasing this boost, you will receive a character of the ordered level. All gold and  items obtained in the process of powerleveling in Shadowlands remains with you. Also, you can add Old content options for 10-50 or 1-50 leveling.</p>
+        </div>
+    </section>
+</div>

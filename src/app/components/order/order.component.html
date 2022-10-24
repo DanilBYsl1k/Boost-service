@@ -1,0 +1,57 @@
+<div class="page-order">
+    <section>
+        <div class="container">
+            <!-- <button class="btn-back">back</button> -->
+            <div class="order-boxs">
+                <div class="box">
+                    <ul class="list-order_cards">
+                        <h2>Your order</h2>
+                        <li *ngFor="let cards of listBasket" class="cards">
+                            <img src={{cards.img}} alt="">
+                            <div class="info-card">
+                                <h3>{{cards.name}}</h3>
+                                <div class="card-price">
+                                    <p class="title-params">Total</p>
+                                    <p>{{cards.price|currency :"€" :'symbol-narrow':'1.1'}}</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="title-params">Total</h3>
+                    <p class="end-Price">{{endPrice|currency :"€" :'symbol-narrow':'1.1'}}</p>
+                </div>
+                <div class="form-order box">
+                    <h2>Billing details</h2>
+                    <form action="" [formGroup]="form" (ngSubmit)="onSubmitOrder()">
+                        <div class="form-container">
+                            <div>
+                                <p class="title-params">Your e-mail</p>
+                                <input formControlName="email" type="text" placeholder="|">
+                                <p class="title-params">Your BattleTag</p>
+                                <input formControlName="batleTag" type="text" placeholder="|">
+                                <p class="title-params">Skype or Discord</p>
+                                <input formControlName="Messenger" type="text">
+                                <p class="title-params">Order notes</p>
+                                <textarea formControlName="notes" placeholder="|" ></textarea>
+                            </div>
+                            <div class="protect">
+                                <div class="payment">
+                                    <img class="shield" src="../../../assets/image/payment/ShieldCheck.svg" alt="">
+                                    <h5>Only security payments</h5>
+                                    <div class="img-payment">
+                                        <img src="../../../assets/image/payment/visa logo.svg" alt="">
+                                        <img src="../../../assets/image/payment/master-card.svg" alt="">
+                                        <img src="../../../assets/image/payment/paypal logo.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button type="submit" [disabled]="this.form.invalid" class="btn-submit">Place order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,43 @@
+<div class="store-basket-page">
+    <section>
+        <div class="container">
+            <ul class="bread-crums">
+                <li class="home" routerLink="/">Home</li>
+                <li>Cart</li>
+            </ul>
+            <div  *ngIf="0>=lenth" class="basket-void" >
+                <h1>Cart is empty</h1>
+                <a class="red-button" routerLink="/categories">see more</a>
+            </div>
+            <div class="wrapper-order" *ngIf="0<lenth">
+                <div class="content-basket">
+                    <ul class="basket_list">
+                        <li class="basket_card" *ngFor="let basketItem of basket">
+                            <img class="img-card" src={{basketItem.img}} alt="">
+                            <div class="container-parameters_basket-card">
+                                <p class="title-params">Boost</p>
+                                <h2>{{basketItem.name}}</h2>
+                                <p class="title-params">Options</p>
+                                <ul class="list-parameters_basket-card">
+                                    <li><p>{{basketItem.parameters.bos.title}}</p><span>{{basketItem.parameters.bos.price|currency :"€" :'symbol-narrow':'1.0'}}</span></li>
+                                    <li><p>{{basketItem.parameters.extr.title}}</p><span>{{basketItem.parameters.extr.price|currency :"€" :'symbol-narrow':'1.0'}}</span></li>
+                                    <li><p>{{basketItem.parameters.oldContent.title}}</p><span>{{basketItem.parameters.oldContent.price|currency :"€" :'symbol-narrow':'1.0'}}</span></li>
+                                </ul>
+                                <p class="title-params">Total</p>
+                                <p class="price-card">{{basketItem.price|currency :"€" :'symbol-narrow':'1.0'}}</p>
+                            </div>
+                            <img (click)="removeCard(basketItem)" class="delete-buket" src="../../../assets/image/stroe-basket/delete-buket.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="order">
+                    <p class="title-params">Total price</p>
+                    <h4>{{endPrice|currency :"€ " :'symbol-narrow':'1.1'}}</h4>
+                    <p class="title-params">Quantity of goods</p>
+                    <h4>{{lenth}} card</h4>
+                    <button (click)="buy()" class="order_btn" routerLink="/store-basket/order">Proceed chechout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

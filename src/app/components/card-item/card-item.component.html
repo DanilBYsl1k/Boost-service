@@ -1,0 +1,96 @@
+<div class="pages_paragraph">
+    <section>
+        <div class="container">
+            <ul class="bread-crums">
+                <li class="home" routerLink="/">home</li>
+                <li routerLink="/categories">World of Warcraft </li>
+                <li>{{card.Paragrafs}} Boosting</li>
+            </ul>
+        </div>
+    </section>
+    <section class="content-card">
+        <div class="container container_content-cards">
+            <div class="info-card">
+                <h1>{{card.name}}</h1>
+                <div class="grid-box-wrapper">
+                    <div class="Region  grid-box"><img src="../../../assets/image/card-page/GlobeHemisphereEast.svg" alt="Region"><div class="text-grid-box"><p>Region</p><h3>EU and US realms</h3></div></div>
+                    <div class="ETA grid-box"><img src="../../../assets/image/card-page/CalendarBlank.svg" alt="ETA"><div class="text-grid-box"><p>ETA</p><h3>Every day</h3></div></div>
+                    <div class="Requirements grid-box"><img src="../../../assets/image/card-page/Flag.svg" alt="Requirements"><div class="text-grid-box"><p>Requirements</p><h3>60lvl</h3></div></div>
+                    <div class="Boost_type grid-box"><img src="../../../assets/image/card-page/RocketLaunch.svg" alt="Boost_type"><div class="text-grid-box"><p>Boost type</p><h3>Accountt sharing/selfpayed</h3></div></div>
+                </div>
+                <p>
+                    We will go through the Castle Nathria  raid in a couple of hours and  kill all selected bosses. We have a lot of raids for both factions every day.We do Castle Nathria raid boost  with our own team, without reselling orders to other guilds. We do not pick up  random people for raids.  You can play yourself  or give access for your account for the the raid. Knowledge of tactics is not necessary, we will do everything ourselves.
+                </p>
+                <ol class="number-list">
+                    <li>Extra  fast leveling for 12 hours;</li>
+                    <li>Fast leveling for 24 hours;</li>
+                    <li>Express  leveling for 48  hours.</li>
+                </ol>
+                <p>Keep in mind – the timetable indicates the start time of the raid, not the time of a specific boss.</p>
+                <h2>Rewards</h2>
+                <ul class="marker-list">
+                    <li>Some 213-220+ ilvl items;</li>
+                    <li>Kill any  boss from first SH raid – Castle Nathria Heroic mode;</li>
+                    <li>Ahead of the Curve: Sire Denathrius if you order last boss kill.</li>
+                </ul>
+                <p>Only personal loot availiable by this boost. 
+                    If you need more loot  – feel free to check our </p>
+                <h2>Description of options</h2>
+                <p>Select a needed bosses</p>
+                <ul class="marker-list">
+                    <li>Shriekwing</li>
+                    <li>Huntsman Altimor</li>
+                    <li>Hungering Destroyer</li>
+                    <li>Artificer Xy’mox</li>
+                    <li>Kael’thas Sunstrider</li>
+                </ul>
+            </div>
+            <div class="shoping-box">
+                    <img class="image-bgc" src={{card.img}} alt="">
+                    <div class="shoping-box-content">
+                        <h4>REGION</h4>
+                        <div class="region-change">
+                            <p>EU</p>
+                            <p>US</p>
+                        </div>
+                        <h4>SELECT NEEDED BOSSES</h4>
+                        <ul class="list-choice bosses">
+                            <li *ngFor="let Bosses of arrayBossesContent" (click)="boss(Bosses.title, Bosses.price)"><p [class.activ-btn]="Bosses.title==bosses">{{Bosses.title}}<span>{{Bosses.price|currency :"€" :'symbol-narrow':'1.0'}}</span></p></li>
+                        </ul>
+                        <div class="boost-type">
+                            <h4>Select boosting type</h4>
+                            <div class="bgc-choice">
+                                <div class="self-play">
+                                    Self-play
+                                </div>
+                                <div class="piloted">
+                                    Piloted
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extra-boost">
+                            <div><input [(ngModel)]="fast" (click)="sumary()" type="checkbox" id="extra"><label for="extra">Extra fast for 12 hours</label></div><span>€ 25</span>
+                        </div>
+                        <h4>Old content</h4>
+                        <ul class="list-choice old-content">
+                            <li *ngFor="let oldContents of arrayoldContent" (click)="oldContent(oldContents.title, oldContents.price)"><p [class.activ-btn]="oldContents.title==old">{{oldContents.title}}<span>{{oldContents.price}}</span></p></li>
+                        </ul>
+                        <h4>Extra options</h4>
+                        <ul  class="list-choice Extra_options">
+                            <li *ngFor="let ExtraContent of arrayExtraContent" (click)="extr(ExtraContent.title, ExtraContent.price)"><p  [class.activ-btn]="ExtraContent.title==extra">{{ExtraContent.title}} <span> {{ExtraContent.price|currency :"€" :'symbol-narrow':'1.0'}}</span></p></li>
+                        </ul>
+                        <div class="total-price">
+                            <p class="price-text">Price</p>
+                            <p class="price-end">{{card.price|currency :"€" :'symbol-narrow':'1.0'}}</p>
+                        </div>
+                        <button (click)="submit()" class="buy-btn">buy now</button>
+                    </div>
+                </div>
+        </div>
+    </section>
+</div>
+                            <!-- <li><p>Finish Storyline <span>€ 7</span></p></li>
+                            <li><p>Torghast Access  <span>€ 5</span></p></li>
+                            <li><p>Covenant campaign<span>€ 9</span></p></li>
+                            <li><p>Torghast Access  <span>€ 5</span></p></li>
+                            <li><p>Covenant campaign <span>€ 9</span></p></li> -->

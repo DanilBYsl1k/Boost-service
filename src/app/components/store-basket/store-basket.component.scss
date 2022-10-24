@@ -1,0 +1,183 @@
+.store-basket-page{
+    min-height: 100vh;
+    background-color: #131212;
+}
+.bread-crums{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+
+    li{
+        cursor: pointer;
+        position: relative;
+        margin-right:15px ;
+        &::after{
+            top: 0;
+            right: -15px;
+            position: absolute;
+            content: url(../../../assets/image/CaretRight.svg);
+        }
+        &:last-child::after{
+            display: none;
+        }
+    }
+}
+.wrapper-order{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 15px;
+}
+.basket-void{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        padding: 15px;
+        width: 200px;
+        text-align: center;
+        background: var(--red-btn-standart);
+    }
+}
+.basket_list{
+    list-style: none;
+    padding: 0;
+    margin: 0;   
+}
+.basket_card{
+    display: flex;
+    margin-bottom: 10px;
+    background: #1B1919;
+    border-radius: 10px;
+    position: relative;
+    height: 307px;
+}
+.img-card{
+    width: 215px;
+    height: 100%;
+}
+.container-parameters_basket-card{
+    padding: 10px;
+    margin-left:10px ;
+    h2{
+        margin: 0;
+    }
+}
+.list-parameters_basket-card{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin-bottom: 5px;
+        background: linear-gradient(90deg, #E5453D -14.78%, #FF7A2E 451.57%);
+        border-radius: 8px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        p{
+            margin: 0;
+        }
+    }
+}
+.title-params{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #5A5A5A;
+}
+.price-card{
+    font-family: 'Quarion';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 135.7%;
+    text-transform: uppercase;
+    margin: 0;
+}
+.delete-buket{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    background: #f1433a41;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    z-index: 3;
+}
+.order{
+    background: #1B1919;
+    border-radius: 10px;
+    padding: 20px;
+    height: 400px;
+}
+.order_btn{
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, #E5453D -14.78%, #FF7A2E 451.57%);
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+}
+@media (max-width:900px ) {
+    .basket_card{
+        h2{
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width:750px ) {
+    .wrapper-order{
+        grid-template-columns: 1fr;
+    }
+    .order{
+        order: -1;
+        margin-bottom: 10px;
+        height: 250px;
+    }
+}
+@media (max-width:500px) {
+    .content-basket{
+        width: 100%;
+    }
+    .basket_card{
+        width: 215px;
+        background: transparent;
+        position: relative;
+        z-index: 3;
+        .img-card{
+            position: absolute;
+            top: 0;
+            z-index: 2;
+        }
+    }
+    .container-parameters_basket-card{
+        z-index: 3;
+        .title-params{
+            width: 50px;
+        }
+    }
+    .basket_list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        // align-items: center;
+    }
+}

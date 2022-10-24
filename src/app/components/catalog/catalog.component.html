@@ -1,0 +1,54 @@
+<section>
+    <div class="paragraf">
+        <ul class="paragraf-list">
+            <li 
+                class="paragraf-cards"
+                *ngFor="let paragraphs of paragraphs" 
+                [routerLink]="[paragraphs.paragraf]" 
+                routerLinkActive="active_paragraf"
+                (click)="filter(paragraphs.paragraf)"
+                >
+                {{paragraphs.paragraf}}
+            </li>
+        </ul>
+    </div>
+    <div class="text-title" *ngIf="popular">
+        <img src="../../../assets/image/fire.svg" alt="">
+        <h2 class="text-title">
+            Most popular services
+        </h2>
+    </div>
+</section>
+<section>
+    <ul class="card-list">
+        <li class="cards" *ngFor="let catalogList of cardsList|SearchFiletr:input">
+        <div  class="card-wrapper">
+            <img class="image-bgc" src="{{catalogList.img}}" alt="">
+            <div class="info-card">
+                <div class="header-card">
+                    <div class="header-card-time">
+                        <img src="../../../assets/image/Clock.svg" alt="">
+                        <p>{{catalogList.timeSalle}} hours</p>
+                    </div>
+                    <p 
+                    class="paragrafs" 
+                    [routerLink]="[catalogList.Paragrafs]"  
+                    (click)="filter(catalogList.Paragrafs)" 
+                    class="{{catalogList.Paragrafs}}">
+                    {{catalogList.Paragrafs}}</p>
+                </div>
+                <div>
+                    <h3 [routerLink]="['/',catalogList.Paragrafs,'cards',catalogList.id]">{{catalogList.name}}</h3>
+                    <ul *ngFor="let info of catalogList.info">
+                        <li>{{info}}</li>
+                    </ul>
+                    <div class="buy-price">
+                        <p class="price"><span  class="price-text">Price</span>{{catalogList.price|currency :"€":'symbol-narrow':'1.0'}}</p>
+                        <div class="red-button" (click)="addCard(catalogList)">Buy now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </li>
+    </ul>
+</section>

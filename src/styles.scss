@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@font-face {
+    font-family: Quarion;
+    src: url(./assets/Fonts/Quarion/Quarion-SemiBold.woff2);
+}
+*{
+    box-sizing: border-box;
+    font-family:Inter ;
+}
+html{
+    height:100%;
+}
+h1{
+    font-family:Quarion ;
+}
+body{    
+    margin:0px;
+    background: var(--background);
+    color: white;
+    margin: 0;
+    height:100%;
+}
+:root{
+    --background:#131212;
+    --btn-green:linear-gradient(180deg, #51B37F 0%, #298152 100%);
+    --btn-border-reviews:#52F59F 100% ,#85D7AC 0%;
+    --linear-btn:linear-gradient(91.07deg, #E5453D -15.2%, #FF7A2E 225.8%);;
+    --red-btn-standart:#F1433A;
+    --red-btn-border:#ED5D55 ;
+    --red-btn-box-shadow-box:0px 4px 39px rgba(231, 87, 87, 0.25);
+    --red-btn-pressed-box-shadow:0px 4px 39px rgba(231, 87, 87, 0.25), inset 0px 4px 26px rgba(79, 8, 8, 0.61);
+}
+.container{
+    max-width: 1110px;
+    margin: auto;
+}
+.red-button{
+    box-shadow: var(--red-btn-box-shadow-box);
+    background-color:var(--red-btn-standart) ;
+    padding: 20px 29px;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid var(--red-btn-border);
+    transition: 0.1s ease;
+    &:hover{
+        border:1px solid white;
+    }
+    &:active{
+        box-shadow: var(--red-btn-pressed-box-shadow);
+    }
+}
+@media (max-width:1150px) {
+    .container{
+        margin: 0 40px;
+    }
+}
+@media (max-width:450px) {
+    .container{
+        margin: 0 20px;
+    }
+}

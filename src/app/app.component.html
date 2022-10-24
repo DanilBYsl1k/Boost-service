@@ -1,0 +1,10 @@
+<div class="page" [class.block-page]="booleanOverlay" [class.active_page]="page=='/'"><!--[class.active_page]="page=='/'"-->
+  <app-header (bgcEffect)="addBgcOverlay()"></app-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer></app-footer>
+</div>
+<div class="overlay" *ngIf="booleanOverlay">
+
+</div>

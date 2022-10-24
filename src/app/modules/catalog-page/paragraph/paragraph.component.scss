@@ -1,0 +1,70 @@
+
+.pages_paragraph{
+    background-color: #131212b2;
+}
+.bread-crums{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+
+    li{
+        cursor: pointer;
+
+        position: relative;
+        margin-right:15px ;
+        &::after{
+            top: 0;
+            right: -15px;
+            position: absolute;
+            content: url(../../../../assets/image/CaretRight.svg);
+        }
+        &:last-child::after{
+            display: none;
+        }
+    }
+}
+.home{
+    cursor: pointer;
+}
+.info_service{
+    background-image: url(../../../../assets/image/background_catalog.png);
+    background-size: cover;
+    padding: 20px 0;
+}  
+.container_info-service{
+    font-family: 'Inter';
+    font-style: normal;
+    color: #C7C7C7;
+    font-size: 16px;
+    line-height: 150.7%;
+    li{
+    font-weight: 500;
+        
+    }
+    p{
+    font-weight: 500;
+    margin-bottom:0 ;
+    }
+}
+.info_service-title{
+    display: flex;
+    align-items: center;
+    img{
+        margin-right: 5px;
+    }
+}
+.list-info{
+    list-style: none;
+    li{
+        position: relative;
+        &::before{
+
+            // top: -10px;
+            bottom: -5px;
+            left: -25px;
+            position: absolute;
+            content: url(../../../../assets/image/CheckCircle.svg);
+        }
+    }
+}
