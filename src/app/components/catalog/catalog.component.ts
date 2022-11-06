@@ -25,6 +25,8 @@ export class CatalogComponent implements OnInit{
     ) {
       
     }
+  nameCard:string
+  alertAdd:boolean
   cardsList:Icatalog[]
   paragraphs:any
   url:string
@@ -61,6 +63,11 @@ export class CatalogComponent implements OnInit{
   }
   addCard(card:Icatalog){
     this.basketService.basket.push(card)
+    this.nameCard=card.name
+    this.alertAdd=true
+    setTimeout(() => {
+      this.alertAdd=false
+    }, 1000);
   }
   
 }

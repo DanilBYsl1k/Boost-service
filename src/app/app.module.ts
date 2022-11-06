@@ -12,6 +12,7 @@ import { MainModule } from './modules/main-page/main-module/main.module';
 import { CardItemComponent } from './components/card-item/card-item.component';
 import { OrderComponent } from './components/order/order.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CatalogModule } from './components/catalog/catalog.module';
 
 
 @NgModule({
@@ -23,7 +24,6 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     CardItemComponent,
     OrderComponent,
     PageNotFoundComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -31,7 +31,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     ParagraphModule,
     MainModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CatalogModule
     // CatalogModule
   ],
   providers: [],

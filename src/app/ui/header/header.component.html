@@ -14,7 +14,9 @@
             </nav>
         </div>
         <div class="search"  *ngIf="url!=='/store-basket/order'">
-            <img src="../../../assets/image/Handbag.svg" alt="" routerLink="/store-basket">
+            <div class="basket-goods_box">
+                <img src="../../../assets/image/Handbag.svg" alt="" routerLink="/store-basket"><span class="lenght-basket">{{basketLng.length}}</span>
+            </div>
             <img (click)="addBgcOverlay()" (click)="phoneNav=!phoneNav" class="menu-phone" src="../../../assets/image/menu-phone.svg" alt="">
             <div class="input_lang"> 
                 <div class="input" routerLink="/categories"><!---->

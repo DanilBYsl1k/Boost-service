@@ -1,11 +1,8 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { fromEvent  } from 'rxjs';
 import { CartParameters } from 'src/app/interface/CartParameters.interface';
 import { Icatalog } from 'src/app/interface/CatalogList.interface';
 import { BasketService } from 'src/app/service/basket.service';
-import { ListCardService } from 'src/app/service/list-card.service';
-
 @Component({
   selector: 'app-card-item',
   templateUrl: './card-item.component.html',
@@ -14,6 +11,7 @@ import { ListCardService } from 'src/app/service/list-card.service';
 export class CardItemComponent implements OnInit {
   constructor(private route:ActivatedRoute, private basketService:BasketService) { }
   card:Icatalog
+  alertAdd:boolean
   fast:boolean=false
   extra:string=''
   old:string=''
@@ -115,5 +113,9 @@ export class CardItemComponent implements OnInit {
   }
   submit(){
     this.basketService.basket.push(this.card)
+    this.alertAdd=true
+    setTimeout(()=>{
+      this.alertAdd=false
+    },1000)
   }
 }
