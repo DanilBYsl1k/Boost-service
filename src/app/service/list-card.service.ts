@@ -16,7 +16,7 @@ export class ListCardService {
       Paragrafs:"TBC Classic",
       timeSalle:12,
       info:["Any KEY level","Best Gear","Fast Boost" ],
-      img:"../../../assets/image/Cards-list/cards.png",
+      img:"/assets/image/Cards-list/cards.png",
       parameters:{
         extr:{title:"Finish Storyline", price:7},
         oldContent:{title:"Finish Storyline", price:7},
@@ -31,7 +31,7 @@ export class ListCardService {
       Paragrafs:"Shadowlands",
       timeSalle:12,
       info:["Any KEY level","Best Gear","Fast Boost" ],
-      img:"../../../assets/image/Cards-list/cards 2.png",
+      img:"/assets/image/Cards-list/cards 2.png",
       parameters:{
         extr:{title:"Finish Storyline", price:7},
         oldContent:{title:"Finish Storyline", price:7},
@@ -46,7 +46,7 @@ export class ListCardService {
       Paragrafs:"Castle Nathria",
       timeSalle:12,
       info:["Any KEY level","Best Gear","Fast Boost" ],
-      img:"../../../assets/image/Cards-list/cards 3.png",
+      img:"/assets/image/Cards-list/cards 3.png",
       parameters:{
         extr:{title:"Finish Storyline", price:7},
         oldContent:{title:"Finish Storyline", price:7},
@@ -61,7 +61,7 @@ export class ListCardService {
       Paragrafs:"Farming",
       timeSalle:12,
       info:["Any KEY level","Best Gear","Fast Boost" ],
-      img:"../../../assets/image/Cards-list/cards 4.png",
+      img:"/assets/image/Cards-list/cards 4.png",
       parameters:{
         extr:{title:"Finish Storyline", price:7},
         oldContent:{title:"Finish Storyline", price:7},
@@ -76,7 +76,7 @@ export class ListCardService {
       Paragrafs:"Gearing",
       timeSalle:12,
       info:["Any KEY level","Best Gear","Fast Boost" ],
-      img:"../../../assets/image/Cards-list/cards 5.png",
+      img:"/assets/image/Cards-list/cards 5.png",
       parameters:{
         extr:{title:"Finish Storyline", price:7},
         oldContent:{title:"Finish Storyline", price:7},
@@ -91,7 +91,7 @@ export class ListCardService {
       Paragrafs:"Raids",
       timeSalle:12,
       info:["Any KEY level","Best Gear","Fast Boost" ],
-      img:"../../../assets/image/Cards-list/cards 6.png",
+      img:"/assets/image/Cards-list/cards 6.png",
       parameters:{
         extr:{title:"Finish Storyline", price:7},
         oldContent:{title:"Finish Storyline", price:7},
@@ -106,7 +106,7 @@ export class ListCardService {
       Paragrafs:"Mounts",
       timeSalle:12,
       info:["Any KEY level","Best Gear","Fast Boost" ],
-      img:"../../../assets/image/Cards-list/cards.png",
+      img:"/assets/image/Cards-list/cards.png",
       parameters:{
         extr:{title:"Finish Storyline", price:7},
         oldContent:{title:"Finish Storyline", price:7},
@@ -121,7 +121,7 @@ export class ListCardService {
       Paragrafs:"PvP",
       timeSalle:12,
       info:["Any KEY level","Best Gear","Fast Boost" ],
-      img:"../../../assets/image/Cards-list/cards 2.png",
+      img:"/assets/image/Cards-list/cards 2.png",
       parameters:{
               extr:{title:"Finish Storyline", price:7},
               oldContent:{title:"Finish Storyline", price:7},
@@ -136,7 +136,7 @@ export class ListCardService {
       Paragrafs:"Shadowlands",
       timeSalle:12,
       info:["Any KEY level","Best Gear","Fast Boost" ],
-      img:"../../../assets/image/Cards-list/cards 3.png",
+      img:"/assets/image/Cards-list/cards 3.png",
       parameters:{
         extr:{title:"Finish Storyline", price:7},
         oldContent:{title:"Finish Storyline", price:7},
