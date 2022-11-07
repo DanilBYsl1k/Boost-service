@@ -2,7 +2,7 @@
     <div class="container container-header">
         <div class="logo-nav">
             <button routerLink="../store-basket" (click)="dontBuy()" *ngIf="url=='/store-basket/order'" class="btn-back">&#8592;</button>
-            <img src="/assets/image/logotype.svg" routerLink="" alt="">
+            <img src="assets/image/logotype.svg" routerLink="" alt="">
             <nav class="main-nav" *ngIf="url!=='/store-basket/order'">
                 <ul class="nav-list">
                     <li routerLink="/categories">Catalog</li>
@@ -15,12 +15,12 @@
         </div>
         <div class="search"  *ngIf="url!=='/store-basket/order'">
             <div class="basket-goods_box">
-                <img src="/assets/image/Handbag.svg" alt="" routerLink="/store-basket"><span class="lenght-basket">{{basketLng.length}}</span>
+                <img src="assets/image/Handbag.svg" alt="" routerLink="/store-basket"><span class="lenght-basket">{{basketLng.length}}</span>
             </div>
-            <img (click)="addBgcOverlay()" (click)="phoneNav=!phoneNav" class="menu-phone" src="/assets/image/menu-phone.svg" alt="">
+            <img (click)="addBgcOverlay()" (click)="phoneNav=!phoneNav" class="menu-phone" src="assets/image/menu-phone.svg" alt="">
             <div class="input_lang"> 
                 <div class="input" routerLink="/categories"><!---->
-                    <input class="input-search" type="text" placeholder="Search"><img routerLink="/store-basket"  class="Glass" src="/assets/image/MagnifyingGlass.svg" alt="">
+                    <input class="input-search" type="text" placeholder="Search"><img routerLink="/store-basket"  class="Glass" src="assets/image/MagnifyingGlass.svg" alt="">
                 </div>
                 <div class="server">
                     <a>US </a>
@@ -30,9 +30,9 @@
         </div>
     </div>
     <div class="phone-menu" *ngIf="phoneNav">
-        <img  src="/assets/image/logotype.svg" routerLink="" alt="">
+        <img  src="assets/image/logotype.svg" routerLink="" alt="">
         <div class="input" routerLink="/categories" ><!---->
-            <input class="input-search" type="text" placeholder="Search"><img routerLink="/store-basket"  class="Glass" src="/assets/image/MagnifyingGlass.svg" alt="">
+            <input class="input-search" type="text" placeholder="Search"><img routerLink="/store-basket"  class="Glass" src="assets/image/MagnifyingGlass.svg" alt="">
         </div>
         <nav class="phone-nav">
             <ul class="nav-list-phone">
