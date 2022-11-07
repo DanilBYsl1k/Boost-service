@@ -147,10 +147,33 @@
         grid-template-columns: 1fr;
         gap: 5px;
     }
+    .payment{
+        margin: 0;
+    }
 }
 @media (max-width:750px) {
     .order-boxs{
         grid-template-columns: 1fr;
         row-gap: 10px;
+    }
+}
+@media (max-width:450px) {
+    .box{
+        width: 100%;
+        
+    }
+    .form-container{
+        input{
+            max-width: 100%;
+        }
+        textarea{
+            max-width: 100%;
+        }
+    }
+}
+@media (max-width:450px) {
+    .box{
+        margin: auto;
+        width: 300px;
     }
 }
