@@ -25,13 +25,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/assets/image",
-              "src/assets/image/card-page",
-              "src/assets/image/Cards-list",
-              "src/assets/image/payment",
-              "src/assets/image/social",
-              "src/assets/image/stroe-basket"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
