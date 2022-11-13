@@ -6,13 +6,10 @@ import { Router } from '@angular/router';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit {
+export class MainComponent{
   popular:boolean=true
   number:number=6
   constructor(private route:Router) { }
-
-  ngOnInit(): void {
-  }
   redirect(){
     this.route.navigate(['categories'])
   }

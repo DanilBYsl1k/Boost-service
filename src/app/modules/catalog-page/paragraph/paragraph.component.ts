@@ -17,8 +17,7 @@ export class ParagraphComponent implements OnInit, DoCheck {
 
     this.number=this.cardsService.CatalogList.length
   }
-  ngDoCheck(): void {//children
+  ngDoCheck(): void {
     this.activeClass=this.param.snapshot.children
-    // console.log(this.activeClass)
   }
 }

@@ -15,15 +15,10 @@ export class AppComponent implements DoCheck{
     this.page=this.params.url
   }
   addBgcOverlay(){
-    console.log('main')
-
     if(this.booleanOverlay){
       this.booleanOverlay=false
-    console.log('a')
-
     }else{
       this.booleanOverlay=true
-      console.log('l') 
     }
   } 
 }

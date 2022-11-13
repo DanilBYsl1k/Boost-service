@@ -58,7 +58,7 @@ export class CatalogComponent implements OnInit{
     if(name.includes('All') || name.includes('/')){
       return
     }else{
-      this.cardsList=this.cardsList.filter((p)=>p.Paragrafs.toLocaleLowerCase().includes(name.toLowerCase()))
+      this.cardsList=this.cardsList.filter((p)=>p.Paragraphs.toLocaleLowerCase().includes(name.toLowerCase()))
     }
   }
   addCard(card:Icatalog){

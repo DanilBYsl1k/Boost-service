@@ -5,12 +5,10 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './alert-buy.component.html',
   styleUrls: ['./alert-buy.component.scss']
 })
-export class AlertBuyComponent implements OnInit {
+export class AlertBuyComponent{
   @Input()nameCard:string
 
   @Input('activeModal')activeModal:boolean
   constructor() { }
-  ngOnInit(): void {
-  }
 
 }

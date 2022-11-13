@@ -107,7 +107,6 @@ export class CardItemComponent implements OnInit {
   for (const keys in this.card.parameters) {
     let key=keys as keyof typeof this.card.parameters
     result=result+this.card.parameters[key].price
-    // console.log(this.card.parameters[key].price)
     }
     this.card.price=result
   }

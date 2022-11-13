@@ -1,14 +1,14 @@
 <section>
-    <div class="paragraf">
-        <ul class="paragraf-list">
+    <div class="paragraphs">
+        <ul class="paragraphs-list">
             <li 
-                class="paragraf-cards"
+                class="paragraphs-cards"
                 *ngFor="let paragraphs of paragraphs" 
-                [routerLink]="[paragraphs.paragraf]" 
-                routerLinkActive="active_paragraf"
-                (click)="filter(paragraphs.paragraf)"
+                [routerLink]="[paragraphs.paragraphs]" 
+                routerLinkActive="active_paragraphs"
+                (click)="filter(paragraphs.paragraphs)"
                 >
-                {{paragraphs.paragraf}}
+                {{paragraphs.paragraphs}}
             </li>
         </ul>
     </div>
@@ -31,14 +31,14 @@
                         <p>{{catalogList.timeSalle}} hours</p>
                     </div>
                     <p 
-                    class="paragrafs" 
-                    [routerLink]="[catalogList.Paragrafs]"  
-                    (click)="filter(catalogList.Paragrafs)" 
-                    class="{{catalogList.Paragrafs}}">
-                    {{catalogList.Paragrafs}}</p>
+                    class="paragraphss" 
+                    [routerLink]="[catalogList.Paragraphs]"  
+                    (click)="filter(catalogList.Paragraphs)" 
+                    class="{{catalogList.Paragraphs}}">
+                    {{catalogList.Paragraphs}}</p>
                 </div>
                 <div>
-                    <h3 [routerLink]="['/',catalogList.Paragrafs,'cards',catalogList.id]">{{catalogList.name}}</h3>
+                    <h3 [routerLink]="['/',catalogList.Paragraphs,'cards',catalogList.id]">{{catalogList.name}}</h3>
                     <ul *ngFor="let info of catalogList.info">
                         <li>{{info}}</li>
                     </ul>

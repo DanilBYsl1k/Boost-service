@@ -6,7 +6,7 @@ interface parametersCard{
 export interface Icatalog{
     name:string
     price:number
-    Paragrafs:string
+    Paragraphs:string
     timeSalle:number
     info:string[]
     img:string

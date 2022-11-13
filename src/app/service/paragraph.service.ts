@@ -7,14 +7,14 @@ export class ParagraphService {
 
   constructor() { }
   ParagraphList=[
-    {paragraf:'All'},
-    {paragraf:"TBC Classic"},
-    {paragraf:"Shadowlands"},
-    {paragraf:"Castle Nathria"},
-    {paragraf:"Farming"},
-    {paragraf:"Gearing"},
-    {paragraf:"Raids"},
-    {paragraf:"Mounts"},
-    {paragraf:"PvP"},
+    {paragraph:'All'},
+    {paragraph:"TBC Classic"},
+    {paragraph:"Shadowlands"},
+    {paragraph:"Castle Nathria"},
+    {paragraph:"Farming"},
+    {paragraph:"Gearing"},
+    {paragraph:"Raids"},
+    {paragraph:"Mounts"},
+    {paragraph:"PvP"},
   ]
 }
